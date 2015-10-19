@@ -1,1 +1,26 @@
-# Empty CSS file for your own CSS
+@media (min-width: 768px){
+    .navbar-nav{
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float:none;
+    }
+}
+.mid{
+	text-align:center;
+}
+div.padding-top{
+	padding-top:40px;	
+}
+div.margin-bot{
+	margin-bottom:20px;	
+}
+div.footer{
+	margin-top:40px;
+	padding:20px;
+}
+span.right-space{
+	margin-right:5px;
+}
+
+.thumbnail img { min-height:150px; height:200px; }
