@@ -1,0 +1,57 @@
+@media (min-width: 768px){
+    .navbar-nav{
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float:none;
+    }
+}
+.italic{
+	font-style: italic;
+}
+.margin-auto{
+	margin-left:auto;
+	margin-right:auto;
+	display:table;
+}
+.mid{
+	text-align:center;
+}
+div.padding-top{
+	padding-top:40px;	
+}
+div.margin-bot{
+	margin-bottom:20px;	
+}
+div.footer{
+	margin-top:40px;
+	padding:20px;
+}
+span.right-space{
+	margin-right:5px;
+}
+
+img.about-us{
+	width:60%;
+	position:absolute;
+	left:10%;
+}
+div.about-us-left{
+	width:200px;
+	position:absolute;
+	left:40px;
+}
+div.about-us-right{
+	width:200px;
+	position:absolute;
+	right:22%;
+	top:450px;
+}
+div.about-us-header{
+	margin-top:40px;
+	margin-bottom:40px;
+	padding-left:28%;
+}
+
+
+.thumbnail img { min-height:150px; height:200px; }
