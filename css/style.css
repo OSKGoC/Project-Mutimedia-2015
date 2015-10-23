@@ -6,6 +6,34 @@
         float:none;
     }
 }
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+@font-face {
+   font-family: ProjectFont-1;
+   src: url(../fonts/SignPainter-HouseScript.ttf);
+}
+@font-face {
+   font-family: ProjectFont-2;
+   src: url(../fonts/thaisanslite_r1.ttf);
+}
+@font-face {
+   font-family: ProjectFont-3;
+   src: url(../fonts/SR FahMai Normal.ttf);
+}
+.font-1{
+	font-family: ProjectFont-1;
+}
+.font-2{
+	font-family: ProjectFont-2;
+}
+.font-3{
+	font-family: ProjectFont-3;
+}
+
+.thumbnail img { min-height:150px; height:200px; }
 .italic{
 	font-style: italic;
 }
@@ -20,12 +48,19 @@
 div.padding-top{
 	padding-top:40px;	
 }
-div.margin-bot{
+div.padding-top-20px{
+	padding-top:20px;	
+}
+.margin-bot{
 	margin-bottom:20px;	
+}
+.margin-bot40px{
+	margin-bottom:40px;	
 }
 div.footer{
 	margin-top:40px;
 	padding:20px;
+	background-color:#CCC;
 }
 span.right-space{
 	margin-right:5px;
@@ -52,6 +87,30 @@ div.about-us-header{
 	margin-bottom:40px;
 	padding-left:28%;
 }
+.font-SignPainter{
+	font-family:
+}
+span.li-font-style{
+	font-size:2em;
+	color:#916039;
+	font-weight: lighter;
+}
+span.icon-margin-right{
+	margin-right:0.5em;
+	font-size:1em;
+	color:#916039;
+}
+img.logo-nav{
+	float:right;
+	margin-top:-10px;
+}
+.color-head{
+	color:#666;
+}
 
 
-.thumbnail img { min-height:150px; height:200px; }
+
+
+
+
+

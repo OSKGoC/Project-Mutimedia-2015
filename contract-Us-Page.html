@@ -12,45 +12,80 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
+  
   </head>
   <body>
   
-  <div class="row">
+
+<!--  <div class="row">
 		<div class="mid padding-top">
 			<img alt="Bootstrap Image Preview" src="images/150x150.png" class="img-circle">
 		</div>
         <div class="mid">
         	<h1>Nice to Meet You <small>STUDIO</small></h1>
         </div>
-  </div>
+  </div> -->
   
-  <div class="row">
+<!--  <div class="row">
 		<div class="col-md-12">
 
 			<ul class="nav navbar-nav">
-				<li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> About Us</a></li>
 				<li><a href="#"><span class="glyphicon glyphicon-th-large"></span> Work</a></li>
 				<li><a href="#"><span class="glyphicon glyphicon-edit"></span> Package</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> About Us</a></li>
-                <li class="alert-warning"><a href="#"><span class="glyphicon glyphicon-envelope"></span> Contract Us</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Contract Us</a></li>
 			</ul>
             
-            <!-- <div class="margin-bot"><hr></div> -->
+            <!-- <div class="margin-bot"><hr></div> 
             <div class="margin-bot"></div>
          </div>
+  </div> -->
+  
+  <div class="container padding-top-20px margin-bot">
+	<div class="row">
+    	<div class="col-md-2">
+        	<a href="#" style="border-bottom:0px"><img class="logo-nav" src="images/logo-mini.jpg"></a>
+        </div>
+		<div class="col-md-10">
+        
+			<ul class="nav nav-tabs nav-justified">
+				<li><a href="#"><span class="glyphicon glyphicon-info-sign icon-margin-right"></span> <span class="font-1 li-font-style">About Us</span></a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-th-large icon-margin-right"></span > <span class="font-1 li-font-style">Work</span></a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-edit icon-margin-right"></span> <span class="font-1 li-font-style">Packages</span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-envelope icon-margin-right"></span> <span class="font-1 li-font-style">Contract Us</span></a></li>
+			</ul>
+		</div>
+	</div>
   </div>
 
   <div class="container-fluid">
 	
     <div class="row">
-    	
 		<div class="col-sm-offset-2 col-md-4" >
-			<form name="sentMessage" class="well" id="contactForm" novalidate="">
-            	<legend>Contact me</legend>
+        	<h1 class="margin-bot40px"><span style="color:#f99f64">C</span><span class="color-head">ONTACT US<span></h1>
+			<dl>
+                <dt>Description lists</dt>
+                <dd>A description list is perfect for defining terms.</dd><dt>Euismod</dt>
+                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                <dt>Malesuada porta</dt>
+                <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                <dt>Felis euismod semper eget lacinia</dt>
+                <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+			</dl>
+            <div class="text-center">
+            	<img src="images/50x50.png">
+                <img src="images/50x50.png">
+                <img src="images/50x50.png">
+                <img src="images/50x50.png">
+            </div>
+        </div>
+        <div class="col-md-4">  
+            <form name="sentMessage" class="well" id="contactForm" novalidate="">
+
              	<div class="control-group">
                 	<div class="controls">
-                		<input type="text" class="form-control" placeholder="Full Name" id="name" required="" data-validation-required-message="Please enter your name">
+                		<input type="text" class="form-control" placeholder="Name" id="name" required="" data-validation-required-message="Please enter your name">
                   	<p class="help-block"></p>
                		</div>
                 </div> 	
@@ -73,27 +108,19 @@
             	<button type="submit" class="btn btn-primary btn-lg">Send</button><br>
            </form>
         </div>
-        <div class="col-md-6">
-        	<dl>
-            <dt>Description lists</dt>
-            <dd>A description list is perfect for defining terms.</dd><dt>Euismod</dt>
-            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-            <dt>Malesuada porta</dt>
-            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-            <dt>Felis euismod semper eget lacinia</dt>
-            <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
-			</dl>
-        </div>
     </div>
     
    	<div class="row">
-        <div class="col-md-12 jumbotron">
-            <address>
+        <div class="col-md-12 footer">
+        	<div class="col-md-offset-1 col-md-5">
+                <h4>All Right Reserved </h4>
+                <h4>Nice to Meet You <small>STUDIO</small></h4>
+            </div>
+            <div class="col-md-5 text-right">
                  <strong>IT KMITL, Inc.</strong><br> สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง<br> ถนนฉลองกรุง เขตลาดกระบัง กรุงเทพ 10520<br>
                  <abbr title="Phone">โทรศัพท์ </abbr>  0 2329 8000 - 0 2329 8099 <br>
                  Website : <a href="http://www.it.kmitl.ac.th/">http://www.it.kmitl.ac.th/</a>
-            </address>
+            </div>
         </div>
   	</div>
   </div>
