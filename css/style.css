@@ -11,6 +11,10 @@
     width: 1000px;
   }
 }
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+}
 @font-face {
    font-family: ProjectFont-1;
    src: url(../fonts/SignPainter-HouseScript.ttf);
@@ -112,6 +116,12 @@ img.logo-nav{
 }
 .color-head{
 	color:#666;
+}
+.card-img{
+	width:90%;
+	height:auto;
+	margin-bottom:40px;
+	
 }
 
 
