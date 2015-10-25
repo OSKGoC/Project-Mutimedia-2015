@@ -11,6 +11,12 @@
     width: 1000px;
   }
 }
+body{
+	background-image:url(../images/background.jpg);
+	background-size:contain;  
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 .carousel-control.left, .carousel-control.right {
    background-image:none !important;
    filter:none !important;
