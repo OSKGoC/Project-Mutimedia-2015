@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<title>An Elegant Sliding Image Gallery with jQuery</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link href="css.css" rel="stylesheet">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.jswipe-0.1.2.js"></script>
+<script type="text/javascript" src="js.js"></script>
+</head>
+
+<body>
+
+  <button id="leftButton" onclick='moveLeft()'>&lt;</button>
+  <button id="rightButton" onclick='moveRight()'>&gt;</button>
+  
+  <div><h1>Left</h1></div>
+  <div style="text-align:center"><h1>Center</h1></div>
+  <div style="text-align:right"><h1>Right</h1></div>
+  
+  <div id="galleryContainer">
+    <div id="gallery">
+      <img src="slides/wedding 3.jpg" alt="Barbed Wire" />
+      <img src="slides/wedding 4.jpg" alt="Feather" />
+      <img src="slides/wedding 8.jpg" alt="Drift Stuff" />
+      <img src="slides/800x533 pic 1.png" alt="Driftwood" />
+      <img src="slides/800x533 pic 2.png" alt="Driftwood and Guy" />
+      <img src="slides/800x533 pic 3.png" alt="Grass and Light" />
+      <img src="slides/800x533 pic 4.png" alt="Pebble and Shells" />
+      <img src="slides/800x533 pic 5.png" alt="Stick and Sea" />
+      <img src="slides/800x533 pic 6.png" alt="Seaweed Gasmask" />
+      <img src="slides/800x533 pic 6.png" alt="Surfers" />
+    </div>
+    <div id="caption">Photo Caption</div>
+    <div id="loading">Please wait...</div>
+  </div>
+
+</body>
+</html>
+
