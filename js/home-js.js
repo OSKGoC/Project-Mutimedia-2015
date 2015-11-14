@@ -16,7 +16,7 @@ var backgroundSlideOpacity = 1.0;     // Opacity of the slides either side of th
 
 var slideHorizMargin = 0;             // Number of pixels either side of each slide
 var buttonHeight = 0;                 // Temporary store for the button heights
-var currentSlide = 0;                 // The slide that the user is currently viewing
+var currentSlide = 1;                 // The slide that the user is currently viewing
 var totalSlides = 0;                  // Total number of slides in the gallery
 var slides = new Array();             // Holds jQuery objects representing each slide image
 var slideWidths = new Array();        // Holds the widths (in pixels) of each slide
