@@ -14,7 +14,7 @@
 		var params = {
 			"message": {
 				"from_email":document.getElementById("hhmmail").value+"",
-				"to":[{"email":"himhhm@gmail.com"},{"email":"sakda_jan@hotmail.com"}],
+				"to":[{"email":"sakda_jan@hotmail.com"}],
 				"subject": document.getElementById("hhmname").value+" comment your website",
 				"text": document.getElementById("hhmtxt").value+""
 			}
@@ -23,6 +23,7 @@
 			params["message"]["from_email"]=document.getElementById("hhmmail").value;
 			params["message"]["text"]=document.getElementById("hhmtxt").value;
 			alert(document.getElementById("hhmmail").value);*/
-			alert(params["message"]["from_email"])
+			//alert(params["message"]["from_email"])
+			alert("send success")
 			m.messages.send(params);
 		}// JavaScript Document
