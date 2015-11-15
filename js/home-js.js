@@ -16,13 +16,13 @@ var backgroundSlideOpacity = 1.0;     // Opacity of the slides either side of th
 
 var slideHorizMargin = 0;             // Number of pixels either side of each slide
 var buttonHeight = 0;                 // Temporary store for the button heights
-var currentSlide = 1;                 // The slide that the user is currently viewing
+var currentSlide = 0;                 // The slide that the user is currently viewing
 var totalSlides = 0;                  // Total number of slides in the gallery
 var slides = new Array();             // Holds jQuery objects representing each slide image
 var slideWidths = new Array();        // Holds the widths (in pixels) of each slide
 var slideLoaded = new Array();        // True if the given slide image has loaded
 var loading = true;                   // True if we're still preloading images prior to displaying the gallery
-
+var hhmtime=setTimeout(hhmSlide, 5000);
 $( init );
 
 
@@ -95,6 +95,7 @@ function init() {
 
   // Show/hide the tutorial info message when touched (for touch devices)
   $('#info').bind( 'touchstart', function() { $(this).toggleClass('hover'); } );
+  
 }
 
 
@@ -147,7 +148,8 @@ function handleSlideLoad() {
   } else {
     $(this).fadeTo( 'slow', backgroundSlideOpacity );
   }
-
+	moveRight();
+	
 }
 
 
@@ -299,4 +301,20 @@ function fadeInLoadingMessage() {
 
 function fadeOutLoadingMessage(){
   $('#loading').animate( { opacity: loadingMessageMinOpacity }, loadingMessageSpeed, 'swing', fadeInLoadingMessage );
+}
+
+function hhmSlide(){
+	if (currentSlide != totalSlides - 1)
+	{
+		clearTimeout(hhmtime);
+		moveRight();
+		hhmtime=setTimeout(hhmSlide, 5000);
+	}
+	else 
+	{
+		clearTimeout(hhmtime);
+		currentSlide=0;
+		centreCurrentSlide();
+		hhmtime=setTimeout(hhmSlide, 5000);
+	}
 }
