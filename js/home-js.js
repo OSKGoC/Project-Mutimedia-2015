@@ -22,7 +22,8 @@ var slides = new Array();             // Holds jQuery objects representing each 
 var slideWidths = new Array();        // Holds the widths (in pixels) of each slide
 var slideLoaded = new Array();        // True if the given slide image has loaded
 var loading = true;                   // True if we're still preloading images prior to displaying the gallery
-var hhmtime=setTimeout(hhmSlide, 5000);
+var hhmtime=setInterval(hhmSlide, 3500);
+var hhmFirstRight=setTimeout(moveRight,500);
 $( init );
 
 
@@ -134,6 +135,7 @@ function handleSlideLoad() {
       $('#rightButton').css('height',buttonHeight);
       $('#rightButton').show();
       addSlideHover();
+	  
       loading = false;
     }
   }
@@ -143,12 +145,12 @@ function handleSlideLoad() {
   // Otherwise, set its opacity to backgroundSlideOpacity.
 
   if ( $(this).data('slideNum') == 0 ) {
+  
     centreCurrentSlide();
     $(this).fadeTo( 'slow', currentSlideOpacity );
   } else {
     $(this).fadeTo( 'slow', backgroundSlideOpacity );
   }
-	moveRight();
 	
 }
 
@@ -303,18 +305,29 @@ function fadeOutLoadingMessage(){
   $('#loading').animate( { opacity: loadingMessageMinOpacity }, loadingMessageSpeed, 'swing', fadeInLoadingMessage );
 }
 
+
 function hhmSlide(){
 	if (currentSlide != totalSlides - 1)
 	{
-		clearTimeout(hhmtime);
+		//clearTimeout(hhmtime);
 		moveRight();
-		hhmtime=setTimeout(hhmSlide, 5000);
+		//hhmtime=setTimeout(hhmSlide, 5000);
 	}
 	else 
 	{
-		clearTimeout(hhmtime);
-		currentSlide=0;
+		currentSlide=1;
 		centreCurrentSlide();
-		hhmtime=setTimeout(hhmSlide, 5000);
+		//for (i=0;i<currentSlide;i++){
+		//	setTimeout( moveLeft, 10 );
+		//}
+		
 	}
+}
+
+function stopHhm(){
+	clearInterval(hhmtime);
+}
+
+function startHhm(){
+	hhmtime=setInterval(hhmSlide, 3500);
 }
